@@ -7,7 +7,7 @@ import { GenericComponent } from './generic/generic.component';
 const routes: Routes = [
   { path: 'animals', component: AnimalsComponentComponent},
   { path: 'fruits', component: FruitsComponentComponent},
-  {path: '', redirectTo: '/animals', pathMatch: 'full'},
+  { path: '', redirectTo: '/animals', pathMatch: 'full'},
   { path: 'generic/:id', component: GenericComponent }
 ];
 
