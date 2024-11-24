@@ -1,0 +1,7 @@
+<div *ngIf="loading">Caricamento...</div>
+<div *ngIf="!loading && cryptoData">
+  <h2>{{ cryptoData.name }} ({{ cryptoData.symbol }})</h2>
+  <p>Prezzo: ${{ cryptoData.priceUsd | number:'1.2-2' }}</p>
+  <p>Cap. di mercato: ${{ cryptoData.marketCapUsd | number:'1.0-0' }}</p>
+  <p>Variazione 24h: {{ cryptoData.changePercent24Hr | number:'1.2-2' }}%</p>
+</div>
